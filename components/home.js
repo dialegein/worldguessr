@@ -2124,7 +2124,7 @@ export default function Home({}) {
           </div>
         )}
 
-      <div
+      {/* <div
         style={{
           top: 0,
           left: 0,
@@ -2148,9 +2148,15 @@ export default function Home({}) {
           style={{ objectFit: "cover", userSelect: "none" }}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-      </div>
+      </div> */}
 
-      <main className={`home`} id="main">
+      <main
+        className={`home`}
+        id="main"
+        style={{
+          background: "#0000ff66",
+        }}
+      >
         <SvEmbedIframe
           nm={gameOptions?.nm}
           npz={gameOptions?.npz}
@@ -2259,9 +2265,9 @@ export default function Home({}) {
           ) : (
             <>
               <div className="home__ui">
-                {onboardingCompleted && (
+                {/* {onboardingCompleted && (
                   <h1 className="home__title">WorldGuessr</h1>
-                )}
+                )} */}
 
                 <div className="home__btns">
                   {onboardingCompleted && (
